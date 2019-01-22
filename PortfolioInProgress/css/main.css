@@ -1,0 +1,329 @@
+body{
+  background-image: url(../images/background.jpg);
+  width: 99%;
+}
+
+header {
+  width: 99%;
+  height: 26.5vh;
+  float: none;
+  padding-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+a:link {
+  border-bottom: 1px dashed;
+}
+a:visited {
+  color: #6666ff;
+  border-bottom: 1px dashed;
+}
+
+a:hover {
+  color: #8080ff;
+  border-bottom: 1px dashed;
+}
+
+a:active {
+  color: #ff00ff;
+  border-bottom: 1px dashed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Carter One', cursive;
+}
+
+h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+p {
+  font-family: 'Mukta', sans-serif;
+}
+
+header h1{
+  padding-left: 5em;
+  padding-top: 2em;
+  float: center;
+}
+
+ul{
+  padding-left: 5em;
+}
+
+li{
+  list-style-type: none;
+  text-align: left;
+  padding-left: 2em;
+  margin-bottom: 5px;
+}
+
+header nav ul {
+  float: right;
+  padding-right: 5em;
+}
+
+nav ul li{
+  display: inline;
+  padding: 0.5em;
+  border: 0.25em outset #DBB2ED;
+}
+
+nav ul li:hover{
+  border-style: inset;
+}
+
+main {
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+#row:nth-child(2n)
+{
+  border: 0.25em outset #DBB2ED;
+}
+
+#row:nth-child(2n):hover
+{
+  border-style: inset;
+}
+
+#col-lg-4, #col-lg-3{
+  border: 0.25em outset #DBB2ED !important;
+  padding: 0.25em;
+}
+
+#fourth:hover, #third:hover {
+  border-style: inset;
+}
+
+#ImgCircle
+{
+  text-align: center !important;
+  align-content: center !important;
+  border-radius: 35%;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+#icon{
+  text-align: center !important;
+  align-content: center !important;
+  border-radius: 0%;
+  max-width: 200px;
+  max-height: 200px;
+  float: left;
+  padding-top: 0.25em;
+  padding-right: 2em;
+}
+
+#color1{
+  background-color: #DBC1ED;
+}
+#color2{
+  background-color: #AA9FAD;
+}
+#color3{
+  background-color: #716466;
+  color: white;
+}
+#color4{
+  background-color: #AA9FAD;
+}
+#color5{
+  background-color: #2C242E;
+  color: white;
+}
+.sticky {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+}
+
+.sticky img{
+  width: 100%;
+}
+
+.enlarge
+{
+  width: 15%;
+}
+
+.footerSpace {
+  height: 3em;
+}
+
+form{
+  float: none;
+}
+
+#right 
+{
+  max-width: 50%;
+  float: right;
+  padding-right: 1em;
+}
+
+#pad
+{
+  padding: 1em;
+}
+
+button{
+  font-weight: bold;
+}
+
+#hidingBreak {
+  display: none;
+}
+
+[class^='col-'] {
+  margin: 1em;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: auto !important;
+  }
+
+  header {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 14em;
+  }
+
+  #icon{
+    text-align: none !important;
+    max-width: 40%;
+    max-height: 40%;
+    float: none;
+    margin: auto;
+    text-align: center;
+    display: block;
+  }
+
+  header h1{
+    align-content: center;
+    padding-left: 0;
+  }
+
+  header h1 a{
+    max-width: 80%;
+    display: block !important;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    align-content: center;
+  }
+
+  header nav ul{
+    padding: 0em !important;
+    margin-top: 1em;
+    align-content: center;
+    display: block;
+    width: 100%;
+  }
+
+  li{
+    text-align: center;
+  }
+
+  #intro{
+    width: var(--totWidth);
+    height: auto;
+    align-content: center;
+    text-align: center;
+  }
+
+  #intro p{
+    text-align: left;
+  }
+
+  #right 
+  {
+    max-width: 100%;
+    float: none;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .container{
+    height: auto;
+    padding: 1em;
+  }
+
+  .row-eq-height{
+    text-align: left !important;
+    align-content: left !important;
+    margin: 0;
+    float: none;
+    border: none;
+    padding: 1em;
+    display: inline;
+  }
+
+  #ImgCircle
+  {
+    text-align: center !important;
+    align-content: center !important;
+    border-radius: 35%;
+    width: 50%;
+    padding: 25%;
+    float: none;
+  }
+
+  #ImgCircle img {
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    text-align: center;
+  }
+
+/*
+  .sticky {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 280px;
+  }
+  
+  .sticky img{
+    width: 100%;
+  }
+  
+  .enlarge
+  {
+    width: 15%;
+  }
+  
+  .footerSpace {
+    height: 1em;
+  }
+  
+  form{
+    float: none;
+  }
+  
+  #pad
+  {
+    padding: 1em;
+  }
+  */
+}
