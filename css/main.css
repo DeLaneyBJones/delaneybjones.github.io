@@ -1,6 +1,10 @@
+p{
+  font-size: 105% !important;
+}
+
 body{
   background-image: url(../images/background.jpg);
-  width: 99%;
+  width: 100%;
 }
 
 header {
@@ -92,12 +96,12 @@ main {
   border-style: inset;
 }
 
-#col-lg-4, #col-lg-3{
+#col-lg-4, #col-lg-3, #col-lg-6{
   border: 0.25em outset #DBB2ED !important;
   padding: 0.25em;
 }
 
-#fourth:hover, #third:hover {
+#fourth:hover, #third:hover, #half:hover {
   border-style: inset;
 }
 
@@ -171,9 +175,24 @@ form{
   padding-right: 1em;
 }
 
+#center
+{
+  float: none;
+  align-content: center;
+  text-align: center;
+  max-width: 50%;
+  width:50%;
+}
+#centered
+{
+  align-content: center;
+  text-align: center;
+}
+
 #pad
 {
   padding: 1em;
+  font-size: 1.1em !important;
 }
 
 button{
@@ -195,7 +214,37 @@ button{
   display:         flex;
 }
 
+#moreInfoButton
+{
+  background-image: url(../images/background.jpg);
+  border: 0.25em outset #DBB2ED;
+  width: 15em;
+  height: 3em;
+}
+
+#moreInfoButton li
+{
+  padding-top: 0.5em;
+  font-weight: bold;
+  color: white;
+  padding-left: 0;
+}
+
+#moreInfoButton:hover
+{
+  border-style: inset;
+}
+
+#col-lg-6 h3{
+  text-align: left;
+}
+
+#col-lg-6 p{
+  display: inline;
+}
+
 @media screen and (max-width: 800px) {
+
   .container {
     height: auto !important;
   }
@@ -284,7 +333,7 @@ button{
     align-content: center !important;
     border-radius: 35%;
     width: 50%;
-    padding: 25%;
+    padding: 25% !important;
     float: none;
   }
 
@@ -295,6 +344,12 @@ button{
     text-align: center;
   }
 
+  [class^='col-'] {
+    margin: 0;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+  }
+  
 /*
   .sticky {
     position: fixed; 
