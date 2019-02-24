@@ -136,40 +136,65 @@ main {
   height: 3em;
 }
 
+#moreInfoButton2
+{
+  border: 0.25em outset #DBB2ED;
+  width: 100%;
+  height: 3em;
+  align-content: center;
+  text-align: center;
+}
+
+#moreInfoButton2 li
+{
+  align-content: center;
+  text-align: center;
+}
+
 #color1{
   background-color: #DBB2ED;
+  border: 0.1em outset #345201;
 }
-#color1 #moreInfoButton{
+#color1 #moreInfoButton, #color1 #moreInfoButton2 {
   background-color: #7600A9;
 }
 
 #color4{
   background-color: #FFF5BD;
+  border: 0.1em outset #345201;
 }
-#color4 #moreInfoButton{
+#color4 #moreInfoButton, #color4 #moreInfoButton2{
   background-color: #FED700;
 }
 
 #color5{
   background-color: #E3FBBA;
+  border: 0.1em outset #345201;
 }
-#color3 #moreInfoButton{
-  background-color: #94eb00;
+#color5 #moreInfoButton, #color5 #moreInfoButton2{
+  background-color: #345201;
 }
 
 #color2{
   background-color: #7600A9;
+  border: 0.1em outset #345201;
+  color: #F9F9F9;
 }
-#color2 #moreInfoButton{
+#color2 #moreInfoButton, #color2 #moreInfoButton2{
   background-color: #2A043B;
 }
 
 #color3{
   background-color: #2A043B;
+  border: 0.1em outset #DBB2ED;
   color: #F9F9F9;
 }
-#color3 #moreInfoButton{
-  background-color: #DBB2ED;
+#color3 #moreInfoButton, #color3 #moreInfoButton2{
+  background-color: #345201;
+}
+
+.workImg{
+  padding: 1em;
 }
 
 .sticky {
@@ -190,7 +215,7 @@ main {
 }
 
 .footerSpace {
-  height: 3em;
+  height: 7em;
 }
 
 form{
@@ -243,7 +268,7 @@ button{
   display:         flex;
 }
 
-#moreInfoButton li
+#moreInfoButton li, #moreInfoButton2 li
 {
   padding-top: 0.5em;
   font-weight: bold;
@@ -251,7 +276,7 @@ button{
   padding-left: 0;
 }
 
-#moreInfoButton:hover
+#moreInfoButton:hover, #moreInfoButton2:hover
 {
   border-style: inset;
 }
