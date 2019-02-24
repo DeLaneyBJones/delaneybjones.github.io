@@ -3,7 +3,10 @@ p{
 }
 
 body{
-  background-image: url(../images/background.jpg);
+  /*background-color: color(236, 255, 229);*/
+  /*background-color: color(240, 247, 237);*/
+  /*background-color: #E3FBBA;*/
+  background-color: #F9F9F9;
   width: 100%;
 }
 
@@ -126,23 +129,49 @@ main {
   padding-right: 2em;
 }
 
+#moreInfoButton
+{
+  border: 0.25em outset #DBB2ED;
+  width: 15em;
+  height: 3em;
+}
+
 #color1{
-  background-color: #DBC1ED;
+  background-color: #DBB2ED;
 }
-#color2{
-  background-color: #AA9FAD;
+#color1 #moreInfoButton{
+  background-color: #7600A9;
 }
-#color3{
-  background-color: #716466;
-  color: white;
-}
+
 #color4{
-  background-color: #AA9FAD;
+  background-color: #FFF5BD;
 }
+#color4 #moreInfoButton{
+  background-color: #FED700;
+}
+
 #color5{
-  background-color: #2C242E;
-  color: white;
+  background-color: #E3FBBA;
 }
+#color3 #moreInfoButton{
+  background-color: #94eb00;
+}
+
+#color2{
+  background-color: #7600A9;
+}
+#color2 #moreInfoButton{
+  background-color: #2A043B;
+}
+
+#color3{
+  background-color: #2A043B;
+  color: #F9F9F9;
+}
+#color3 #moreInfoButton{
+  background-color: #DBB2ED;
+}
+
 .sticky {
   position: fixed; 
   bottom: 0;
@@ -212,14 +241,6 @@ button{
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-}
-
-#moreInfoButton
-{
-  background-image: url(../images/background.jpg);
-  border: 0.25em outset #DBB2ED;
-  width: 15em;
-  height: 3em;
 }
 
 #moreInfoButton li
