@@ -1,11 +1,20 @@
+/*
+    Off-white: #F9F9F9 (White)
+    Accent Color: #E3FBBA (Light Green)
+    Secondary Color: #FFF5BD (Light Yellow)
+    Primary Color: #DBB2ED (Light Purple)
+
+    Other:  #345201 (Dark Green)
+            #7600A9 (Bright Purple)
+            #2A043B (Dark Purple)
+            #FED700 (Bright Yellow)
+*/
+
 p{
   font-size: 105% !important;
 }
 
 body{
-  /*background-color: color(236, 255, 229);*/
-  /*background-color: color(240, 247, 237);*/
-  /*background-color: #E3FBBA;*/
   background-color: #F9F9F9;
   width: 100%;
 }
@@ -26,12 +35,12 @@ a:link {
   border-bottom: 1px dashed;
 }
 a:visited {
-  color: #6666ff;
+  color: #345201;
   border-bottom: 1px dashed;
 }
 
 a:hover {
-  color: #8080ff;
+  color: #7600A9;
   border-bottom: 1px dashed;
 }
 
@@ -55,7 +64,6 @@ p {
 header h1{
   padding-left: 5em;
   padding-top: 2em;
-  float: center;
 }
 
 ul{
@@ -89,18 +97,8 @@ main {
   padding-bottom: 2em;
 }
 
-#row:nth-child(2n)
-{
-  border: 0.25em outset #DBB2ED;
-}
-
-#row:nth-child(2n):hover
-{
-  border-style: inset;
-}
-
 #col-lg-4, #col-lg-3, #col-lg-6{
-  border: 0.25em outset #DBB2ED !important;
+  border: 0.25em outset #2A043B !important; 
   padding: 0.25em;
 }
 
@@ -129,7 +127,7 @@ main {
   padding-right: 2em;
 }
 
-#moreInfoButton
+#moreInfoButton 
 {
   border: 0.25em outset #DBB2ED;
   width: 15em;
@@ -151,46 +149,44 @@ main {
   text-align: center;
 }
 
-#color1{
-  background-color: #DBB2ED;
-  border: 0.1em outset #345201;
+#color1 {
+    background-color: #DBB2ED;
+    border: 0.1em outset #7600A9;
 }
+
 #color1 #moreInfoButton, #color1 #moreInfoButton2 {
-  background-color: #7600A9;
+    background-color: #DBB2ED;
+    color: #7600A9;
 }
 
-#color4{
-  background-color: #FFF5BD;
-  border: 0.1em outset #345201;
-}
-#color4 #moreInfoButton, #color4 #moreInfoButton2{
-  background-color: #FED700;
+#color2 {
+    background-color: #FFF5BD;
+    border: 0.1em outset #7600A9;
 }
 
-#color5{
-  background-color: #E3FBBA;
-  border: 0.1em outset #345201;
-}
-#color5 #moreInfoButton, #color5 #moreInfoButton2{
-  background-color: #345201;
+#color2 #moreInfoButton, #color2 #moreInfoButton2 {
+    background-color: #DBB2ED;
+    color: #7600A9;
 }
 
-#color2{
-  background-color: #7600A9;
-  border: 0.1em outset #345201;
-  color: #F9F9F9;
-}
-#color2 #moreInfoButton, #color2 #moreInfoButton2{
-  background-color: #2A043B;
+#color2 #moreInfoButton, #color2 #moreInfoButton2 input{
+    background-color: none;
 }
 
-#color3{
-  background-color: #2A043B;
-  border: 0.1em outset #DBB2ED;
-  color: #F9F9F9;
+#color3 {
+    background-color: #E3FBBA;
+    border: 0.1em outset #345201;
 }
-#color3 #moreInfoButton, #color3 #moreInfoButton2{
-  background-color: #345201;
+
+#color3 #moreInfoButton, #color2 #moreInfoButton2 {
+    background-color: #345201;
+    color: #F9F9F9;
+}
+
+.sidePictures
+{
+  max-height: 25%;
+  height: 3em;
 }
 
 .workImg{
@@ -268,12 +264,11 @@ button{
   display:         flex;
 }
 
-#moreInfoButton li, #moreInfoButton2 li
-{
-  padding-top: 0.5em;
-  font-weight: bold;
-  color: white;
-  padding-left: 0;
+#moreInfoButton li, #moreInfoButton2 li {
+    padding-top: 0.5em;
+    font-weight: bold;
+    color: #2A043B;
+    padding-left: 0;
 }
 
 #moreInfoButton:hover, #moreInfoButton2:hover
@@ -302,7 +297,6 @@ button{
   }
 
   #icon{
-    text-align: none !important;
     max-width: 40%;
     max-height: 40%;
     float: none;
@@ -365,7 +359,6 @@ button{
 
   .row-eq-height{
     text-align: left !important;
-    align-content: left !important;
     margin: 0;
     float: none;
     border: none;
@@ -396,35 +389,4 @@ button{
     padding-bottom: 2em;
   }
   
-/*
-  .sticky {
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 280px;
-  }
-  
-  .sticky img{
-    width: 100%;
-  }
-  
-  .enlarge
-  {
-    width: 15%;
-  }
-  
-  .footerSpace {
-    height: 1em;
-  }
-  
-  form{
-    float: none;
-  }
-  
-  #pad
-  {
-    padding: 1em;
-  }
-  */
 }
