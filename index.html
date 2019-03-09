@@ -159,7 +159,7 @@
                 </p>
                 <h2>Email Me!</h2>
                 <div class="form-group">
-                    <form>
+                    <form method="post" action="email.php" name="contactMeEmail">
                         <br>
                         <br>
                         <br>
@@ -173,11 +173,11 @@
                         <br>
                         <div class="form-group">
                             <label for="comment">Your Message:</label>
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                            <textarea class="form-control" rows="5" id="comment" name="message"></textarea>
                         </div>
                         <br>
                         <br>
-                        <input type="submit" name="submit button" id="submit" label="submit" aria-label="Submit" class="form-control">
+                        <input type="submit" name="submit" id="submit" label="submit" aria-label="Submit" value="submit" class="form-control">
                     </form>
                 </div>
             </div>
