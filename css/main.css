@@ -9,6 +9,11 @@
             #2A043B (Dark Purple)
             #FED700 (Bright Yellow)
 */
+.introPic
+{
+  width: 20em;
+}
+
 #link
 {
   text-align: center;
