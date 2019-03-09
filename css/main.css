@@ -9,9 +9,26 @@
             #2A043B (Dark Purple)
             #FED700 (Bright Yellow)
 */
+#link
+{
+  text-align: center;
+  align-content: center;
+}
+#link a
+{
+  text-decoration: none;
+}
+#link img
+{
+  width: 4em;
+  background-color: #DBB2ED;
+  border-radius: 0.25em;
+  border: 0.5em solid #DBB2ED;
+}
+
 
 p{
-  font-size: 105% !important;
+  font-size: 130% !important;
 }
 
 body{
@@ -31,22 +48,16 @@ a {
   font-style: italic;
 }
 
-a:link {
-  border-bottom: 1px dashed;
-}
 a:visited {
   color: #345201;
-  border-bottom: 1px dashed;
 }
 
 a:hover {
   color: #7600A9;
-  border-bottom: 1px dashed;
 }
 
 a:active {
   color: #ff00ff;
-  border-bottom: 1px dashed;
 }
 
 h1, h2, h3, h4, h5, h6 {
