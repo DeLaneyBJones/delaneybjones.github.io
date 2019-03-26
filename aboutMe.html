@@ -20,141 +20,168 @@
 </head>
 <body>
     <header id="color1" class="container">
-        <p id="HeaderImg">
-            <img src="images/icon.png" alt="A group of monsters stepping outside the boxMonsters stepping outside the box" id="icon">
-        </p>
-        <h1><a href="index.html">DeLaney Jones</a></h1>
-        <nav>
-            <ul>
-                <li><a href="aboutMe.html">A Bit About Me</a></li>
-                <li><a href="index.html#myGames">Monster Games</a></li>
-                <li><a href="index.html#educaton">Education</a></li>
-                <li><a href="index.html#contactMe">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="col-lg-2">
+                <p id="HeaderImg">
+                    <img src="images/icon.png" alt="A group of monsters stepping outside the boxMonsters stepping outside the box" id="icon">
+                </p>
+            </div>
+            <div class="col-lg-10" id="centered">
+                <h1><a href="index.html">DeLaney Jones</a></h1>
+            </div>
+        </div>
+        <br>
+        <div class="container row-eq-height" id="centered">
+                <div class="col-lg">
+                    <p><a href="aboutMe.html">A Bit About Me</a></p>
+                </div>
+                <div class="col-lg">
+                    <p><a href="index.html#educaton">Education</a></p>
+                </div>
+                <div class="col-lg">
+                    <p><a href="index.html#myGames">Monster Games</a></p>
+                </div>
+                <div class="col-lg">
+                    <p><a href="index.html#contactMe">Contact Me</a></p>
+                </div>
+            </div>
     </header>
     <main class="page-wrap">
         <br>
         <div class="container">
-            <div id="color1" class="col-lg-6">
-                <h2>DeLaney Jones</h2>
-                <p>dbjones2518@lcmail.lcsc.edu | 509-295-3411 | GitHub: DeLaneyBJones | Handshake: 16903297 | delaneybjones.netlify.com</p>
+            <div id="color1" class="col-lg-8">
                 <h3>
-                        Education
+                    BS in Computer Science & AA in Web Design and Development
                 </h3>
-                <p>
-                    BACHELORS OF SCIENCE IN COMPUTER SCIENCE | ANTICIPATED SPRING 2020 | LEWIS-CLARK STATE COLLEGE
+                <p class="bordered" id="centered">
+                    Anticipated Spirng 2020 | Lewis-Clark State College
                 </p>
-                <p>
-                    ASSOCIATES OF APPLIED SCIENCE IN WEB DESIGN AND DEVELOPMENT | ANTICIPATED SPRINT 2020 | LEWIS-CLARK STATE COLLEGE
-                </p>
-
                 <h3>Grants</h3>
                 <p>Higher Education Research Council undergraduate research award 2017</p>
                 <p>Higher Education Research Council undergraduate research award 2018</p>
-                <p>INBRE Summer 2018 Undergraduate Fellowship grant</p>
+                <p>INBRE Summer 2018 Undergraduate Fellowship Grant</p>
 
-                <h3>Poster Presentations “CASTER - Computer Assisted Segmentation Tool Environment Revisited”</h3>
-                <p>2018 ICUR Conference</p>
-                <p>2018 INBRE Conference</p>
-                <p>2019 ICUR Conference (Upcoming Summer 2019)</p>
-
+                <h3>Poster Presentations</h3>
+                <h4>“CASTER - Computer Assisted Segmentation Tool Environment Revisited”</h4>
+                <section class="row-eq-height">
+                    <div class="col-sm-4">
+                        <p>2018 ICUR Conference</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>2018 INBRE Conference</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>2019 ICUR Conference (Summer 2019)</p>  
+                    </div>
+                </section>
                 <h3>Skills and Languages</h3>
-                <div class="container">
-                    <div class="col-sm-2">
+                <section class="row-eq-height">
+                    <div class="col-sm-4">
                         <p>Python</p>
                         <p>Processing</p>
                         <p>Java</p>
                         <p>C++</p>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-4">
                         <p>HTML</p>
                         <p>SCSS</p>
                         <p>PHP</p>
                         <p>JavaScript</p>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-4">
                         <p>SQL</p>
                         <p>C</p>
                         <p>C#</p>
                     </div>
-                </div>
-
+                </section>
                 <h3>Relevant Courses</h3>
-                <div class="container">
-                    <div class="col-sm-1">
+                <section class="row-eq-height">
+                    <div class="col-sm-4">
                         <p>Precalculus</p>
                         <p>Calculus 1</p>
                         <p>Discrete Mathematics</p>
-                    </div>
-                    <div class="col-sm-2">
-                        <p>Linux and Tools</p>
-                        <p>Foundations/Programming</p>
-                        <p>Operating Systems</p>
-                        <p>Software Engineering</p>
                         <p>Databases and Knowledge Managment</p>
                     </div>
-                    <div class="col-sm-2">
-                        <p>Introduction to Bioinformatics</p>
-                        <p>Capstone Design</p>
+                    <div class="col-sm-4">
+                        <p>Linux and Tools</p>
+                        <p>Foundations/Programming</p>
                         <p>Human Relations and Organizations</p>
                         <p>SQL: Structure Query Language</p>
                     </div>
-                </div>
-                
+
+                    <div class="col-sm-4">
+                        <p>Introduction to Bioinformatics</p>
+                        <p>Capstone Design</p>
+                        <p>Operating Systems</p>
+                        <p>Software Engineering</p>
+                    </div>
+                </section>
                 <h3>Awards</h3>
-                <p>President’s List: Fall 2016, Spring 2017</p>
-                <p>Dean’s List: Fall 2017, Spring 2018, Fall 2018</p>
-
+                <div class="col-sm-6">
+                    <p>President’s List: Fall 2016, Spring 2017</p>
+                </div>
+                <div class="col-sm-6">
+                    <p>Dean’s List: Fall 2017, Spring 2018, Fall 2018</p>
+                </div>
                 <h3>Job Experience</h3>
-                <p>Research Assistant | LCSC | March 2016 - Current</p>
-                <p>Sandwich Artist | Subway | June 2015 – August 2015</p>
-                
-                <h3>References Available Upon Request</h3>
+                <div class="col-sm-6">
+                    <p>Research Assistant | LCSC | March 2016 - Current</p>
+                </div>
+                <div class="col-sm-6">
+                    <p>Sandwich Artist | Subway | June 2015 – August 2015</p>
+                </div>
             </div>
-            <div id="color1" class="col-lg-5">
-                <h2>Who am I?</h2>
-                <p id="centered">
-                    <img src="images/me.jpg" class="img-rounded" id="centered" alt="A picture of me sitting in a train car at Silverwood Theme park.">
-                </p>
-                <p id="pad">My name is DeLaney Jones, and I am studing at Lewis-Clark State College. I will graduate in 2020 with an Associates in Web Design and a Bachelors in Computer Science. Currently I work for Dr. Seth Long as a Research Assistant. We are working on a program called CASTER (Computer Assisted Segmentation Tool Enviroment Revisited). The goal of this program is to outline rod spherules within mouse eyes for further study. I have attended several research confrences to present our works, which as been well received.
-                </p>
-
-                <h2>My education</h2>
-
-                <p id="pad">I started gaining an interest in computer science in juionor high. I wanted to know how the computer worked on the inside, and started keeping a journal about computer facts. I continued working on filling up my journal through high school, but dropped it when I started college. I took my first year at Walla Walla community college, and then took a year off for medical reasons. Durring that time, I was homeschooling my little sister through Preschool. However, I was diapointed in the resources I could find to teach her. This encouraged me to create my own games that met her needs and kept her interest. Since then, I have been working on creating a Monster School series to provide those games and more to other children who can use them.</p>
-
-                <p id="centered">
-                        <img src="images/LCSC.jpg" class="img-rounded" id="center" alt="A very simple webpage layout">
-                </p>
+            <div id="color1" class="col-lg-4">
+                <br>
+                <br>
+                <div>
+                    <p class="imgLiquidFill imgLiquid" id="ImgCircle">
+                        <img src="images/cooking.jpg" alt="A drawing of a beautiful sea turtle">
+                    </p>
+                    <h2>Challenges</h2>
+                    <p>I made this dessert because I found heavy whipping cream in the fridge that needed to be used up. I wanted to see what I could do, and eventually ending up with this as my end product. It is a chocolate bowl filled with three layers: chocolate moouse, raspberry moouse, and marshmallow moouse, and topped with a swirl of whipped cream and a raspberry cream chocolate.</p>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <p id="ImgCircle" class="imgLiquidFill imgLiquid">
+                        <img src="images/turtle.jpg" alt="A drawing of a beautiful sea turtle">
+                    </p>
+                    <h2>My Drawings</h2>
+                    <p>I drew the turtle in the upper left hand corner based on a photo from Altru Vistas Cuba Oceanic Society. I see turtles as a symbol of freedom, so I really like them. They are beautiful and elegant, and I feel honored to represent them in drawings. This particular drawing took about six months to complete, and I used colored pencils as my medium.</p>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <p id="ImgCircle" class="imgLiquidFill imgLiquid">
+                        <img src="images/SophieSophie.jpg" alt="A picture of a white and grey sploched kitten">
+                    </p>
+                    <h2>My Kitten</h2>
+                    <p>In around June of 2018, a litter of kittens showed up in my backyard. I took most of them to the animal shelter, but I feel in love with this one. I named her Sophia, and we are very close. She provides me with a time-based routeen, which really helps me. I'm training her to follow simple commands, and she is already leash trained. If I am home, she is never far from me. </p>
+                </div>
             </div>
         </div>
         <br>
         <div class="container row-eq-height">
-            <div id="color2" class="col-lg-4">
-                <p id="ImgCircle" class="imgLiquidFill imgLiquid">
-                    <img src="images/turtle.jpg" alt="A drawing of a beautiful sea turtle">
-                </p>
-                <h2>My Drawings</h2>
-                <p>I drew the turtle in the upper left hand corner based on a photo from Altru Vistas Cuba Oceanic Society. I see turtles as a symbol of freedom, so I really like them. They are beautiful and elegant, and I feel honored to represent them in drawings. This particular drawing took about six months to complete, and I used colored pencils as my medium.</p>
-            </div>
-            <div id="color2" class="col-lg-4">
-                <p id="ImgCircle" class="imgLiquidFill imgLiquid">
-                    <img src="images/SophieSophie.jpg" alt="A picture of a white and grey sploched kitten">
-                </p>
-                <h2>My Kitten</h2>
-                <p>In around June of 2018, a litter of kittens showed up in my backyard. I took most of them to the animal shelter, but I feel in love with this one. I named her Sophia, and we are very close. She provides me with a time-based routeen, which really helps me. I'm training her to follow simple commands, and she is already leash trained. If I am home, she is never far from me. </p>
-            </div>
-            <div id="color2" class="col-lg-4">
-                <p id="ImgCircle" class="imgLiquidFill imgLiquid">
-                    <img src="images/cooking.jpg" alt="A drawing of a beautiful sea turtle">
-                </p>
-                <h2>Challenges</h2>
-                <p id="pad">I made this dessert because I found heavy whipping cream in the fridge that needed to be used up. I wanted to see what I could do, and eventually ending up with this as my end product. It is a chocolate bowl filled with three layers: chocolate moouse, raspberry moouse, and marshmallow moouse, and topped with a swirl of whipped cream and a raspberry cream chocolate.</p>
-            </div>
+
         </div>
     </main>
     <footer class="sticky">
         <img src="images/townWithMonsters(2).png" alt="A monster town">
     </footer>
 </body>
+
+
+<!--                 <p>
+                    <img src="images/me2.jpg" alt="A picture of me sitting in a train car at Silver Wood Theme Park" class="picture">
+                </p>
+                <p id="pad">My name is DeLaney Jones, and I am studing at Lewis-Clark State College. I will graduate in 2020 with an Applied Associates in Web Design and a Bachelors in Computer Science. Currently I work for Dr. Seth Long as a Research Assistant. We are working on a program called CASTER (Computer Assisted Segmentation Tool Enviroment Revisited). The goal of this program is to outline rod spherules within mouse eyes for further study. I have attended several research confrences to present our works, which as been well received.
+                </p>
+
+                <h2>My education</h2>
+
+                <p id="pad">I took my first year at Walla Walla community college, and then took a year off for medical reasons. Durring that time, I was homeschooling my little sister through Preschool. However, I was diapointed in the resources I could find to teach her. This encouraged me to create my own games that met her needs and kept her interest. Since then, I have been working on creating a Monster School series to provide those games and more to other children who can use them.</p>
+
+                <p id="centered">
+                        <img src="images/LCSC.jpg" class="img-rounded" id="center" alt="A very simple webpage layout">
+                </p> -->

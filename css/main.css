@@ -76,6 +76,7 @@ h2, h3, h4, h5, h6 {
 
 p {
   font-family: 'Mukta', sans-serif;
+  margin: 1.5em !important;
 }
 
 header h1{
@@ -87,7 +88,7 @@ ul{
   padding-left: 5em;
 }
 
-li{
+ul li{
   list-style-type: none;
   text-align: left;
   padding-left: 2em;
@@ -258,10 +259,14 @@ form{
   text-align: center;
 }
 
+.bordered{
+  border-bottom: 0.1em solid #2A043B;
+}
+
 #pad
 {
   padding: 1em;
-  font-size: 1.1em !important;
+  margin: 1em;
 }
 
 button{
@@ -270,10 +275,6 @@ button{
 
 #hidingBreak {
   display: none;
-}
-
-[class^='col-'] {
-  margin: 1em;
 }
 
 .row-eq-height {
@@ -390,13 +391,16 @@ button{
     align-content: center !important;
     border-radius: 35%;
     width: 50%;
-    padding: 25% !important;
+    padding: 5em !important;
+    margin: 5em !important;
     float: none;
   }
 
   #ImgCircle img {
     width: 50%;
     height: 50%;
+    padding: 5em !important;
+    margin: 5em !important;
     align-content: center;
     text-align: center;
   }
