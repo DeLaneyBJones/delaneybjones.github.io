@@ -75,18 +75,36 @@ span {
   font-size: 5em;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1025px){
+  .picture
+  {
+    width: 20em;
+    padding-top: 5em;
+    align-content: center;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
 
   #icon {
-    max-width: 150px;
+    max-width: 125px;
   }
   
   span {
   font-size: 3em;
   }
 
-  [class^='col-sm'] {
-    float: none;
+  .picture
+  {
+    width: 10em;
+    padding-top: 5em;
+    align-content: center;
+    text-align: center;
+    padding: auto;
+    margin: auto;
   }
 }
   /* .container {
