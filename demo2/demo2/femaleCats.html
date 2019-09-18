@@ -1,0 +1,12 @@
+---
+layout: page
+title: Female Cats
+---
+
+<ul>
+    {% for cat in site.data.cats %}
+        {% if cat.gender == 'female' %}
+        <li>{{cat.name}}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
