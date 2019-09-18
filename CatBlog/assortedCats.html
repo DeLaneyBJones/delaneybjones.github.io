@@ -1,0 +1,12 @@
+---
+layout: page
+title: Assorted Cats
+---
+
+<ul>
+    {% for cat in site.data.cats %}
+        {% if cat.gender == 'assorted' %}
+        <li>{{cat.name}}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
