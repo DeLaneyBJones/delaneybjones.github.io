@@ -39,7 +39,7 @@
         <div class="container-fluid">
             <div class="row">
                 <form class="form-inline" id="category">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-12">
                         <div class="form-group">
                             <label class="" for="categories">Categories:</label>
                             <select class="form-control" id="categories">
@@ -51,7 +51,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 col-sm-12">
                         <button type="button" onclick="loadDoc()" class="btn btn-success btn-lg btn-block" value="Input Button">Draw New Card</button>
                     </div>
                 </form>
@@ -86,7 +86,7 @@
                 var myData = xmlDoc.getElementsByTagName(userData)[0].getElementsByTagName("prompt");
                 console.log(myData);
                 var number = Math.floor(Math.random() * myData.length + 1);
-                var formattedData = "<div class='row'>" + "<div class='col-lg-3 prompt'><p>" + myData[number].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</p></div><div class='col-lg-3'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageA")[0].childNodes[0].nodeValue + " alt='imageA'></div><div class='col-lg-3 promptImage'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageB")[0].childNodes[0].nodeValue + " alt='imageB'></div><div class='col-lg-3'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageC")[0].childNodes[0].nodeValue + " alt='imageC'></div></div>";
+                var formattedData = "<div class='row'>" + "<div class='col-lg-3 col-sm-12 prompt'><p>" + myData[number].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</p></div><div class='col-lg-3 col-sm-12'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageA")[0].childNodes[0].nodeValue + " alt='imageA'></div><div class='col-lg-3 col-sm-12 promptImage'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageB")[0].childNodes[0].nodeValue + " alt='imageB'></div><div class='col-lg-3 col-sm-12'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageC")[0].childNodes[0].nodeValue + " alt='imageC'></div></div>";
                 document.getElementById("prompts").innerHTML = formattedData;
                 promptValue = myData[number].getElementsByTagName("name")[0].childNodes[0].nodeValue;
             }
@@ -100,10 +100,10 @@
                     var x = setInterval(function() {
                         distance = distance - 1000;
                         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                        var prompt = "<div class='row'><div class='col-lg-6 prompt'><p>" + promptValue +"</p></div><div class='col-lg-6 prompt'><p>" + seconds + "s</p></div></div>";
+                        var prompt = "<div class='row'><div class='col-lg-6 col-sm-12 prompt'><p>" + promptValue +"</p></div><div class='col-lg-6 col-sm-12 prompt'><p>" + seconds + "s</p></div></div>";
                         if (distance < 0) {
                             clearInterval(x);
-                            var prompt = "<div class='row'><div class='col-lg-6 prompt'><p>" + promptValue +"</p></div><div class='col-lg-6 prompt'><p>END TURN</p></div></div>";
+                            var prompt = "<div class='row'><div class='col-lg-6 col-sm-12 prompt'><p>" + promptValue +"</p></div><div class='col-lg-6  col-sm-12 prompt'><p>END TURN</p></div></div>";
                             document.getElementById("prompts").innerHTML = prompt;
                         }
                         else if (promptValueStart != promptValue) {
