@@ -65,7 +65,12 @@ main
     padding-top: 5em;
     padding-bottom: 5em;
 }
-
+@media only screen and (max-width: 600px) {
+    main {
+       padding-left: 0;
+       padding-right: 0;
+    }
+}
 main h2 a{
     font-family: 'Playfair Display', serif;
     color: black;
