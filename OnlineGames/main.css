@@ -72,8 +72,10 @@
     main {
        padding-left: 0;
        padding-right: 0;
+
     }
 }
+
 main h2 a{
     font-family: 'Playfair Display', serif;
     color: black;
