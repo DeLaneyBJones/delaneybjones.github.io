@@ -1,0 +1,128 @@
+<!--
+    color 1: #fff5cc
+    color 2: #3B7080
+    color 3: #B8B3BE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Pictionary</title>
+    
+</head>
+<body>
+    <div class="container-fluid myHeader">
+        <div class="row">
+            <div class="col-lg-3 col-sm-3">
+                <img src="images/Characters/cupcakeSpider.png" alt="Cupcake Spider">
+            </div>
+            <div class="col-lg-4 col-sm-9">
+                <h1>DeLaney's Zoom Games</h1>
+            </div>
+        </div>
+        <div class="row myNav">
+            <ul class="list-inline">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <form class="form-inline" id="category">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="form-group">
+                            <label class="" for="categories">Categories:</label>
+                            <select class="form-control" id="categories">
+                              <option id="yellow" name="P">P - Person/Place/Animal</option>
+                              <option id="blue" name="O">O - Object</option>
+                              <option id="brown" name="A">A - Action</option>
+                              <option id="green" name="D">D - Difficult</option>
+                              <option id="red" name="AP">AP - All Play</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-12">
+                        <button type="button" onclick="loadDoc()" class="btn btn-success btn-lg btn-block" value="Input Button">Draw New Card</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-fluid" id="prompts">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <button type="button" onclick="start()" class="btn btn-success btn-lg btn-block" value="Input Button">Start</button>
+            </div>
+        </div>
+        <script>
+            var promptValue;
+            function loadDoc(){
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200){
+                        mineTwo(this);
+                    }
+                };
+                xhttp.open("GET", "http://localhost/OnlineGames/pictionary.xml", true);
+                xhttp.send();
+            }
+            function mineTwo(xml){
+                var i;
+                var userData = document.getElementById("categories");
+                userData = userData.options[userData.selectedIndex].text.split(" ")[0];
+                console.log(userData);
+                
+                var xmlDoc = xml.responseXML;
+                var myData = xmlDoc.getElementsByTagName(userData)[0].getElementsByTagName("prompt");
+                console.log(myData);
+                var number = Math.floor(Math.random() * myData.length + 1);
+                var formattedData = "<div class='row'>" + "<div class='col-lg-3 col-sm-12 prompt'><p>" + myData[number].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</p></div><div class='col-lg-3 col-sm-12'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageA")[0].childNodes[0].nodeValue + " alt='imageA'></div><div class='col-lg-3 col-sm-12 promptImage'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageB")[0].childNodes[0].nodeValue + " alt='imageB'></div><div class='col-lg-3 col-sm-12'><img class='promptImage' src=" + myData[number].getElementsByTagName("imageC")[0].childNodes[0].nodeValue + " alt='imageC'></div></div>";
+                document.getElementById("prompts").innerHTML = formattedData;
+                promptValue = myData[number].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+            }
+            function start(){
+                var distance = 60000;
+                if (promptValue == undefined) {
+                    document.getElementById("prompts").innerHTML = "<div class='row'><div class='col-lg-12 prompt'><p>Please Draw a Card</p></div></div>";
+                }
+                else {
+                    var promptValueStart = promptValue;
+                    var x = setInterval(function() {
+                        distance = distance - 1000;
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        var prompt = "<div class='row'><div class='col-lg-6 col-sm-12 prompt'><p>" + promptValue +"</p></div><div class='col-lg-6 col-sm-12 prompt'><p>" + seconds + "s</p></div></div>";
+                        if (distance < 0) {
+                            clearInterval(x);
+                            var prompt = "<div class='row'><div class='col-lg-6 col-sm-12 prompt'><p>" + promptValue +"</p></div><div class='col-lg-6  col-sm-12 prompt'><p>END TURN</p></div></div>";
+                            document.getElementById("prompts").innerHTML = prompt;
+                        }
+                        else if (promptValueStart != promptValue) {
+                            clearInterval(x);
+                            distance = 0;
+                        }
+                        else{
+                            document.getElementById("prompts").innerHTML = prompt;
+                        }
+                    }, 1000);
+                }
+            }
+        </script>
+   </main>
+</body>
+</html>
+
+<!--
+    Flex code column height (CSS 8-15): https://medium.com/wdstack/bootstrap-equal-height-columns-d07bc934eb27
+    start() code: https://www.w3schools.com/howto/howto_js_countdown.asp
+    None of the images are mine
+-->
