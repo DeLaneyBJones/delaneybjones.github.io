@@ -9,10 +9,26 @@ body {
   width: 100%;
 }
 
+#HoCButton{
+  background-color: #2A043B;
+  color: #FFFBE6;
+  border-radius: 2em;
+  padding: 2em;
+  font-size: large;
+}
+
+
 a {
   color: #2A043B;
   text-decoration: none;
   font-style: italic;
+}
+
+.navigation {
+  scroll-behavior: smooth;
+  transition-duration: .3s;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 a:hover {
@@ -73,6 +89,21 @@ ul li{
 
 span {
   font-size: 5em;
+}
+
+.form-group {
+  border: 0.25em solid #2A043B;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.hourOfCode {
+  background-color: #2A043B;
+}
+
+.registration {
+  background-color: #FFFBE6;
 }
 
 @media screen and (max-width: 1025px){
