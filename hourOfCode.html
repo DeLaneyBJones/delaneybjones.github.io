@@ -67,133 +67,141 @@
                 <form method="POST" action="https://formspree.io/f/myybjorb" name="Hour of Code Registration">
                     <p>
                         <div class="form-group registration">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label for="guardianA">Guardian's Name: </label>
+                            <fieldset>
+                                <legend>Guardian Information</legend>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <label for="Guardian's Name">Guardian's Name: </label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="text" name="Guardian's Name" aria-label="Guardian's Name: " label="Guardian's Name: " id="text" class="form-control" placeholder="Guardian's Name" required>
+                                    </div>
+                                    <div class="col-lg-1"></div>
+                                    <div class="col-lg-2">
+                                        <label for="Guardian's Email">Guardian's Email:</label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="email" name="Guardian's Email" aria-label="Guardian's Email: " label="Guardian's Email: " id="email" class="form-control" placeholder="Guardian's Email" required>
+                                    </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <input type="text" name="guardianA" aria-label="Guardian's Name: " label="Guardian's Name: " id="text" class="form-control" placeholder="Guardian's Name" required>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <label for="Guardian's Phone">Guardian's Phone: </label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="tel" name="Guardian's Phone" aria-label="Guardian's Phone: " label="Guardian's Phone: " id="tel" class="form-control" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                    </div>
+                                    <div class="col-lg-1"></div>
+                                    <div class="col-lg-2">
+                                        <label for="Emergency Phone">Emergency Phone: </label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="tel" name="Emergency Phone" aria-label="Emergency Phone: " label="Emergency Phone: " id="tel" class="form-control" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                    </div>
                                 </div>
-                                <div class="col-lg-1"></div>
-                                <div class="col-lg-2">
-                                    <label for="email">Guardian's Email:</label>
-                                </div>
-                                <div class="col-lg-3">
-                                    <input type="email" name="email" aria-label="Guardian's Email: " label="Guardian's Email: " id="email" class="form-control" placeholder="Guardian's Email" required>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label for="phone">Guardian's Phone: </label>
-                                </div>
-                                <div class="col-lg-3">
-                                    <input type="tel" name="phone" aria-label="Guardian's Phone: " label="Guardian's Phone: " id="tel" class="form-control" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                                </div>
-                                <div class="col-lg-1"></div>
-                                <div class="col-lg-2">
-                                    <label for="emergencyContact">Emergency Phone: </label>
-                                </div>
-                                <div class="col-lg-3">
-                                    <input type="tel" name="emergencyContact" aria-label="Emergency Phone: " label="Emergency Phone: " id="tel" class="form-control" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-4"><label for="familyComfort">Family Comfort Level: </label></div>
-                                <div class="col-lg-4">
-                                    <input type="checkbox" id="socialMask" name="socialMast" value="SocialMask">
-                                    <label for="socialMask">Social distancing with masks</label>
-                                    <br>
-                                    <input type="checkbox" id="socialNmask" name="socialNmask" value="SocialNmask">
-                                    <label for="socialNmask">Social distancing without masks</label>
-                                    <br>
-                                    <input type="checkbox" id="maskNsocial" name="maskNsocial" value="MaskNsocial">
-                                    <label for="maskNsocial">Masks without social distancing</label>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-4"><label for="Family Comfort Level">Family Comfort Level: </label></div>
+                                    <div class="col-lg-4">
+                                        <input type="checkbox" id="socialMask" name="Family Comfort Level" value="Social distancing with masks">
+                                        <label for="socialMask">Social distancing with masks</label>
+                                        <br>
+                                        <input type="checkbox" id="socialNmask" name="Family Comfort Level" value="Social distancing without masks">
+                                        <label for="socialNmask">Social distancing without masks</label>
+                                        <br>
+                                        <input type="checkbox" id="maskNsocial" name="Family Comfort Level" value="Masks without social distancing">
+                                        <label for="maskNsocial">Masks without social distancing</label>
 
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="checkbox" id="NsocialNmask" name="Family Comfort Level" value="No masks or social distancing">
+                                        <label for="NsocialNmask">No masks or social distancing</label>
+                                        <br>
+                                        <input type="checkbox" id="online" name="Family Comfort Level" value="Online only" checked>
+                                        <label for="online">Online only</label>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <input type="checkbox" id="NsocialNmask" name="NsocialNmask" value="NsocialNmask">
-                                    <label for="NsocialNmask">No masks or social distancing</label>
-                                    <br>
-                                    <input type="checkbox" id="online" name="online" value="online">
-                                    <label for="online">Online only</label>
-                                </div>
-                            </div>
+                            </fieldset>
                         </div>
                         <br>
                         <div class="form-group registration">
-                            <div class="row">
-                                <div class="col-lg-2"><label for="childName">Child's Name: </label></div>
-                                <div class="col-lg-3">
-                                    <input type="text" name="childName" aria-label="Child's Name: " label="Child's Name: " id="text" class="form-control" placeholder="Child's Name" required>
+                            <fieldset>
+                                <legend>Child Information</legend>
+                                <div class="row">
+                                    <div class="col-lg-2"><label for="childName">Child's Name: </label></div>
+                                    <div class="col-lg-3">
+                                        <input type="text" name="childName" aria-label="Child's Name: " label="Child's Name: " id="text" class="form-control" placeholder="Child's Name" required>
+                                    </div>
+                                    <div class="col-lg-1"></div>
+                                    <div class="col-lg-2"><label for="childAge">Child's Age: </label></div>
+                                    <div class="col-lg-3">
+                                        <input type="number" name="ChildAge" aria-label="Child's Age: " label="Child's Age: " id="number" class="form-control" placeholder="Child's Age" required>
+                                    </div>
                                 </div>
-                                <div class="col-lg-1"></div>
-                                <div class="col-lg-2"><label for="childAge">Child's Age: </label></div>
-                                <div class="col-lg-3">
-                                    <input type="number" name="ChildAge" aria-label="Child's Age: " label="Child's Age: " id="number" class="form-control" placeholder="Child's Age" required>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-4"><label for="skillGroup">My child's skills: </label></div>
+                                    <div class="col-lg-4">
+                                        <input type="checkbox" id="basicComputer" name="basicComputer" value="BasicComputer">
+                                        <label for="basicComputer">Basic Computer Skills</label>
+                                        <br>
+                                        <input type="checkbox" id="shapes" name="shapes" value="Shapes">
+                                        <label for="shapes">Shapes</label>
+                                        <br>
+                                        <input type="checkbox" id="counting" name="counting" value="Counting">
+                                        <label for="counting">Counting</label>
+                                        <br>
+                                        <input type="checkbox" id="reading" name="reading" value="Reading">
+                                        <label for="reading">Reading</label>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="checkbox" id="compass" name="compass" value="Compass Rose">
+                                        <label for="compass">Compass Rose</label>
+                                        <br>
+                                        <input type="checkbox" id="multiplication" name="Multiplication" value="Multiplication">
+                                        <label for="multiplication">Multiplication</label>
+                                        <br>
+                                        <input type="checkbox" id="angles" name="angles" value="Angles">
+                                        <label for="angles">Angles</label>
+                                        <br>
+                                        <input type="checkbox" id="previous" name="previous" value="Previous Coding Experience">
+                                        <label for="previous">Previous Coding Experience</label>
+                                    </div>
+                                </div>                       
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-6"><label for="device">My child has a portable deivice to connect to the internet that they can bring to class</label></div>
+                                    <div class="col-lg-3">
+                                            <input type="radio" id="deviceY" name="device" value="Yes" required>
+                                            <label for="deviceY">Yes</label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="radio" id="deviceN" name="device" value="No" required>
+                                        <label for="deviceN">No</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-4"><label for="skillGroup">My child's skills: </label></div>
-                                <div class="col-lg-4">
-                                    <input type="checkbox" id="basicComputer" name="basicComputer" value="BasicComputer">
-                                    <label for="basicComputer">Basic Computer Skills</label>
-                                    <br>
-                                    <input type="checkbox" id="shapes" name="shapes" value="Shapes">
-                                    <label for="shapes">Shapes</label>
-                                    <br>
-                                    <input type="checkbox" id="counting" name="counting" value="Counting">
-                                    <label for="counting">Counting</label>
-                                    <br>
-                                    <input type="checkbox" id="reading" name="reading" value="Reading">
-                                    <label for="reading">Reading</label>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-6"><label for="homeDevice">My child has access to a device at home that they can use to connect to the internet</label></div>
+                                    <div class="col-lg-3">
+                                        <input type="radio" id="homeDevice" name="homeDevice" value="Yes" required>
+                                        <label for="homeDeviceY">Yes</label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="radio" id="homeDevice" name="homeDevice" value="No" required>
+                                        <label for="homeDeviceN">No</label>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <input type="checkbox" id="compass" name="compass" value="CompassRose">
-                                    <label for="compass">Compass Rose</label>
-                                    <br>
-                                    <input type="checkbox" id="multiplication" name="multiplication" value="Multiplication">
-                                    <label for="multiplication">Multiplication</label>
-                                    <br>
-                                    <input type="checkbox" id="angles" name="angles" value="Angles">
-                                    <label for="angles">Angles</label>
-                                    <br>
-                                    <input type="checkbox" id="previous" name="previous" value="Previous">
-                                    <label for="previous">Previous Coding Experience</label>
-                                </div>
-                            </div>                       
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-6"><label for="device">My child has a portable deivice to connect to the internet that they can bring to class</label></div>
-                                <div class="col-lg-3">
-                                    <input type="radio" id="device" name="deviceY" value="deviceY">
-                                    <label for="deviceY">Yes</label>
-                                </div>
-                                <div class="col-lg-3">
-                                    <input type="radio" id="device" name="deviceN" value="deviceN">
-                                    <label for="deviceN">No</label>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-6"><label for="homeDevice">My child has access to a device at home that they can use to connect to the internet</label></div>
-                                <div class="col-lg-3">
-                                    <input type="radio" id="homeDevice" name="homeDeviceY" value="homeDeviceY">
-                                    <label for="homeDeviceY">Yes</label>
-                                </div>
-                                <div class="col-lg-3">
-                                    <input type="radio" id="homeDevice" name="homeDeviceN" value="homeDeviceN">
-                                    <label for="homeDeviceN">No</label>
-                                </div>
-                            </div>
+                            </fieldset>
                         </div>
                         <br>
                         <p>
                             <div class="form-group registration">
-                                <label for="comment">Comments:</label>
-                                <textarea class="form-control" rows="4" id="comment" name="message"></textarea>
+                                <fieldset>
+                                <legend>Comments</legend>
+                                    <textarea class="form-control" rows="4" id="comment" name="Comments"></textarea>
+                                </fieldset>
                             </div>
                         </p>
                     </p>
