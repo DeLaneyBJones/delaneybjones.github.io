@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/liquid/js/imgLiquid.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Mukta" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Hour of Code</title>
+</head>
+
+<body> 
+    <header id="color1" class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <p id="centered">
+                    <img src="images/icon.png" alt="A group of monsters stepping outside the boxMonsters stepping outside the box" id="icon">
+                </p>
+            </div>
+            <div class="col-sm-10" id="centered">
+                <h1><a href="index.html">DeLaney Jones</a></h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <p id="centered"><a href="hourOfCode.html" id="HoCButton">Hour of Code Registration</a></p>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <p id="centered"><a href="#aboutMe">A Bit About Me</a></p>
+            </div>
+            <div class="col-sm-3">
+                <p id="centered"><a href="#educaton">Education</a></p>
+            </div>
+            <div class="col-sm-3">
+                <p id="centered"><a href="#myGames">Monster Games</a></p>
+            </div>
+            <div class="col-sm-3">
+                <p id="centered"><a href="#contactMe">Contact Me</a></p>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div id="color2" class="col-lg-8">
+            <br>
+            <br>
+            <div class="form-group hourOfCode">
+                <form method="POST" action="https://formspree.io/dbjones2518@lcmail.lcsc.edu" name="Hour of Code Registration">
+                    <p>
+                        <div class="form-group registration">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <label for="guardianA">Guardian's Name: </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" name="guardianA" aria-label="Guardian's Name: " label="Guardian's Name: " id="text" class="form-control" placeholder="Guardian's Name">
+                                </div>
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-2">
+                                    <label for="email">Guardian's Email:</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="email" name="email" aria-label="Guardian's Email: " label="Guardian's Email: " id="email" class="form-control" placeholder="Guardian's Email">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <label for="phone">Guardian's Phone: </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="tel" name="phone" aria-label="Guardian's Phone: " label="Guardian's Phone: " id="tel" class="form-control" placeholder="Guardian's Phone">
+                                </div>
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-2">
+                                    <label for="emergencyContact">Emergency Phone: </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="tel" name="emergencyContact" aria-label="Emergency Phone: " label="Emergency Phone: " id="tel" class="form-control" placeholder="Emergency Phone">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-4"><label for="familyComfort">Family Comfort Level: </label></div>
+                                <div class="col-lg-4">
+                                    <input type="checkbox" id="socialMask" name="socialMast" value="SocialMask">
+                                    <label for="socialMask">Social distancing with masks</label>
+                                    <br>
+                                    <input type="checkbox" id="socialNmask" name="socialNmask" value="SocialNmask">
+                                    <label for="socialNmask">Social distancing without masks</label>
+                                    <br>
+                                    <input type="checkbox" id="maskNsocial" name="maskNsocial" value="MaskNsocial">
+                                    <label for="maskNsocial">Masks without social distancing</label>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="checkbox" id="NsocialNmask" name="NsocialNmask" value="NsocialNmask">
+                                    <label for="NsocialNmask">No masks or social distancing</label>
+                                    <br>
+                                    <input type="checkbox" id="online" name="online" value="online">
+                                    <label for="online">Online only</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group registration">
+                            <div class="row">
+                                <div class="col-lg-2"><label for="childName">Child's Name: </label></div>
+                                <div class="col-lg-3">
+                                    <input type="text" name="childName" aria-label="Child's Name: " label="Child's Name: " id="text" class="form-control" placeholder="Child's Name">
+                                </div>
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-2"><label for="childAge">Child's Age: </label></div>
+                                <div class="col-lg-3">
+                                    <input type="number" name="ChildAge" aria-label="Child's Age: " label="Child's Age: " id="number" class="form-control" placeholder="Child's Age">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-4"><label for="skillGroup">My child's skills: </label></div>
+                                <div class="col-lg-4">
+                                    <input type="checkbox" id="basicComputer" name="basicComputer" value="BasicComputer">
+                                    <label for="basicComputer">Basic Computer Skills</label>
+                                    <br>
+                                    <input type="checkbox" id="shapes" name="shapes" value="Shapes">
+                                    <label for="shapes">Shapes</label>
+                                    <br>
+                                    <input type="checkbox" id="counting" name="counting" value="Counting">
+                                    <label for="counting">Counting</label>
+                                    <br>
+                                    <input type="checkbox" id="reading" name="reading" value="Reading">
+                                    <label for="reading">Reading</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="checkbox" id="compass" name="compass" value="CompassRose">
+                                    <label for="compass">Compass Rose</label>
+                                    <br>
+                                    <input type="checkbox" id="multiplication" name="multiplication" value="Multiplication">
+                                    <label for="multiplication">Multiplication</label>
+                                    <br>
+                                    <input type="checkbox" id="angles" name="angles" value="Angles">
+                                    <label for="angles">Angles</label>
+                                    <br>
+                                    <input type="checkbox" id="previous" name="previous" value="Previous">
+                                    <label for="previous">Previous Coding Experience</label>
+                                </div>
+                            </div>                       
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-6"><label for="device">My child has a portable deivice to connect to the internet that they can bring to class</label></div>
+                                <div class="col-lg-3">
+                                    <input type="radio" id="device" name="deviceY" value="deviceY">
+                                    <label for="deviceY">Yes</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="radio" id="device" name="deviceN" value="deviceN">
+                                    <label for="deviceN">No</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-6"><label for="homeDevice">My child has access to a device at home that they can use to connect to the internet</label></div>
+                                <div class="col-lg-3">
+                                    <input type="radio" id="homeDevice" name="homeDeviceY" value="homeDeviceY">
+                                    <label for="homeDeviceY">Yes</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="radio" id="homeDevice" name="homeDeviceN" value="homeDeviceN">
+                                    <label for="homeDeviceN">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p>
+                            <div class="form-group registration">
+                                <label for="comment">Comments:</label>
+                                <textarea class="form-control" rows="4" id="comment" name="message"></textarea>
+                            </div>
+                        </p>
+                    </p>
+                    <br>
+                    <input type="submit" name="submit" id="submit" label="submit" aria-label="Submit" value="submit" class="form-control">
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</body>
