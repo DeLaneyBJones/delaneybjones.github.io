@@ -17,6 +17,12 @@ body {
   font-size: large;
 }
 
+.required{
+  color: red;
+  display: inline;
+  margin: 0 !important;
+}
+
 
 a {
   color: #2A043B;
