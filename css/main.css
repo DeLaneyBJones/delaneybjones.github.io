@@ -75,6 +75,21 @@ span {
   font-size: 5em;
 }
 
+.form-group {
+  border: 0.25em solid #2A043B;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.hourOfCode {
+  background-color: #2A043B;
+}
+
+.registration {
+  background-color: #FFFBE6;
+}
+
 @media screen and (max-width: 1025px){
   .picture
   {
