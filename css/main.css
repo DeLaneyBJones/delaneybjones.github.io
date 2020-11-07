@@ -23,6 +23,10 @@ body {
   margin: 0 !important;
 }
 
+.timeOpen {
+  display: inline;
+}
+
 
 a {
   color: #2A043B;
