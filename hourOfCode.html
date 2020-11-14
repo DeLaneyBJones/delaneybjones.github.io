@@ -226,7 +226,7 @@
                                         <input type="radio" id="homeDevice" name="homeDevice" value="No" required>
                                         <label for="homeDeviceN">No</label>
                                     </div>
-                                    <p id="courseReccomendation" value="blank"></p>
+                                    <input type="text" id="courseReccomendation" name="recommendations" value="blank">
                                 </div>
                             </fieldset>
                         </div>
@@ -373,28 +373,28 @@
           {
               if ((computerSkill == true) && (shapes == true) && (causeEffect == true) && (count >= 3))
               {
-                console.log("Course A!");
+                suggestedClasses += "A";
               }
           }
           if ((age >= 5) && (age <= 8))
           {
               if((count10 == true) && (count >= 6))
               {
-                console.log("Course B!");
+                suggestedClasses += "B";
               }
           } 
           if ((age >= 6) && (age <= 10))
           {
               if ((reading == true) && (writing == true) && (complexPatterns == true) && (count100 == true) && (count >= 9))
               {
-                console.log("Course C!");
+                suggestedClasses += "C";
               }
           }
           if ((age >= 7) && (age <= 11))
           {
               if ((persistance == true) && (critical == true) && (angles == true) && (count >= 12))
               {
-                console.log("Course D!");
+                suggestedClasses += "D";
               }
 
           }
@@ -402,7 +402,7 @@
           {
               if ((persistance == true) && (critical == true) && (angles == true) && (multiplication == true) && (count >= 14))
               {
-                console.log("Course E!");
+                suggestedClasses += "E";
               }
 
           }
@@ -410,11 +410,12 @@
           {
               if ((persistance == true) && (critical == true) && (negNum == true) && (previous == true) && (count >= 15))
               {
-                console.log("Course F!");
+                suggestedClasses += "F";
               }
           }
 
-          document.getElementById(courseReccomendation).innerText = "Testing";
+          document.getElementById("courseReccomendation").value = suggestedClasses;
+          console.log(document.getElementById("courseReccomendation").value);
         }
     </script>
 
