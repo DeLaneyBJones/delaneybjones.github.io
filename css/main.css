@@ -17,6 +17,10 @@ body {
   font-size: large;
 }
 
+#courseReccomendation {
+  visibility: hidden;
+}
+
 .required{
   color: red;
   display: inline;
