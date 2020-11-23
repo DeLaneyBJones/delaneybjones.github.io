@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title>Hour of Code</title>
+    <title>Hour of Code<sup>TM</sup></title>
 </head>
 
 <body> 
@@ -38,7 +38,7 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
-                <p id="centered"><a href="hourOfCode.html" id="HoCButton">Hour of Code Registration</a></p>
+                <p id="centered"><a href="hourOfCode.html" id="HoCButton">Hour of Code<sup>TM</sup> Registration</a></p>
             </div>
             <div class="col-sm-3"></div>
         </div>
@@ -412,6 +412,11 @@
               {
                 suggestedClasses += "F";
               }
+          }
+
+          if (suggestedClasses == "")
+          {
+              suggestedClasses += "A";
           }
 
           document.getElementById("courseReccomendation").value = suggestedClasses;
